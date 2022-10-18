@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>    
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="Index.html">Home</a>
+                </div>    
+                
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>    
+            </div>    
+    
+            <div class="right-side">
+                <div class="brand">
+                    <div>ALVIN ABUBILLA</div>
+                </div>    
+            </div>    
+        </div>  
+        
+        <div class="content-wrapper">
+            
+            <div class="portfolio-items-wrapper">
+                
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/c logo1.png">
+                        </div>  
+                        
+                        <div class="subtitle">
+                            Completed Harvad's free CS50 course. Got a firm grasp of general programming syntax through deep study of the C language.
+                        </div>
+                    </div>    
+                </div> 
+                
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/html-css.png">
+                        </div>                         
+                        
+                        <div class="subtitle">
+                            Acquired a decent understanding of HTML and CSS. Applied knowledge gained by building this personal website and cloning Facebook from scratch.
+                        </div>
+                    </div>    
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/reactjs.png">
+                        </div>  
+                        
+                        <div class="subtitle">
+                            Acquired an average understanding of React while attempting to build a clone of Facebook from scratch.
+                        </div>
+                    </div>    
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/python.png">
+                        </div>  
+                        
+                        <div class="subtitle">
+                            Proficient in Python. Sample projects include Therapy bot, Simple password manager and Rock Paper Scissors game.
+                        </div>
+                    </div>    
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/youtube logo.png">
+                        </div>  
+                        
+                        <div class="subtitle">
+                            YouTube content creator for 2+ years. Uploaded 50+ videos. Committed to using analogies/illustrations to share information.
+                        </div>
+                    </div>    
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/ibm logo.png">
+                        </div>  
+                        
+                        <div class="subtitle">
+                            Systems Administrator for 9 months. Performed routine servicing of office devices. Performed system installations and carried out troubleshooting strategies regularly. Acquired up to 12 IBM certifications which qualified the business to win large contracts with the Government.
+                        </div>
+                    </div>    
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/sales test.png">
+                        </div>  
+                        
+                        <div class="subtitle">
+                            Junior Sales Executive (CV Bank) till date. Assisted with social media marketing. Assisted in social media boostings to expand client base and bring in more revenue for the company. 
+                        </div>
+                    </div>    
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/git.png">
+                        </div>  
+                        
+                        <div class="subtitle">
+                            <a href="about.html">Check out Alvin's projects on Github..</a>
+                        </div>
+                    </div>    
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/linkedin.png">
+                        </div>  
+                        
+                        <div class="subtitle">
+                            <a href="https://www.linkedin.com/in/alvin-abubilla-32b976207/">Chack out Alvin's LinkedIn profile..</a>
+                        </div>
+                    </div>    
+                </div>
+                
+            </div> 
+            
+        </div>    
+        
+    </div>    
+</body> 
+<script>
+    const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper')
+    
+    portfolioitems.forEach(portfolioitem => {
+        portfolioitem.addEventListener('mouseover', () => {
+            portfolioitem.childNodes[1].classlist.add('img-darken');
+        })
+    
+        portfolioitem.addEventListener('mouseout', () => {
+            portfolioitem.childNodes[1].classlist.remove('img-darken');
+        })
+    })
+    
+</script>    
+</html>    
